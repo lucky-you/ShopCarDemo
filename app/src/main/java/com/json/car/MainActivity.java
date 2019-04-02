@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements GoodsExpandableListAdapter.OnSelectedAllListner {
+public class MainActivity extends AppCompatActivity implements GoodsExpandableListAdapter.OnSelectedAllListener {
 
     private ExpandableListView expandableListView;
     private GoodsExpandableListAdapter adapter;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements GoodsExpandableLi
         });
 
         //设置adapter的监听事件
-        adapter.setOnSelectedAllListner(this);
+        adapter.setOnSelectedAllListener(this);
 
         //通过监听器关联Activity和Adapter的关系
         View.OnClickListener listener = adapter.getAdapterOnClickListener();

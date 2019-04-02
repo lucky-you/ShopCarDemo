@@ -17,7 +17,7 @@ public class GoodsExpandableListAdapter extends BaseExpandableListAdapter {
     private List<GoodsBean> lists;
     private LayoutInflater inflater;
     private CustomDialog dialog;
-    private OnSelectedAllListner listener;//回调接口
+    private OnSelectedAllListener listener;//回调接口
     private boolean isSelectedAll = false;
 
     public GoodsExpandableListAdapter(Context context) {
@@ -260,11 +260,11 @@ public class GoodsExpandableListAdapter extends BaseExpandableListAdapter {
         return isSelectedAll;
     }
 
-    public interface OnSelectedAllListner {
+    public interface OnSelectedAllListener {
         void isSelectedAll(boolean flag);
     }
 
-    public void setOnSelectedAllListner(OnSelectedAllListner listener) {
+    public void setOnSelectedAllListener(OnSelectedAllListener listener) {
         this.listener = listener;
     }
 
